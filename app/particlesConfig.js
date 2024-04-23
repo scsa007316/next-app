@@ -13,7 +13,7 @@ const particlesConfig =
         "enable": true,
         "mode": "repulse"
       },
-      "resize": true
+      "resize": 1
     },
     "modes": {
       "push": {
