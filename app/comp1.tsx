@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import dynamic from 'next/dynamic';
 import particlesConfig from './particlesConfig';
 //import 'katex/dist/katex.min.css';
-import NavBar from '/components/NavBar';
+import NavBar from '../components/NavBar';
 
 const DynamicParticles = dynamic(() => import('@tsparticles/react'), { ssr: false });
 
