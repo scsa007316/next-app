@@ -5,7 +5,7 @@ import React from 'react';
 import dynamic from 'next/dynamic';
 import BackToTopButton from '../components/ToTop';
 import Footer from '../components/Footer';
-
+import Pagep1 from './comp1'
 import BackgroundWithStars from './BackgroundWithStars';
 import Lotcomp2 from './lotcomp2';
 
@@ -57,6 +57,8 @@ const Page = () => {
 
 return (
   <>
+ <Pagep1 />
+
  <Lotcomp2 />
     <div>
     <BackgroundWithStars videos={videos} />
