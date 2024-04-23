@@ -3,7 +3,7 @@
 // page.tsx
 import React from 'react';
 import dynamic from 'next/dynamic';
-import BackToTopButton from '/components/ToTop';
+import BackToTopButton from '../components/ToTop';
 import Footer from '../components/Footer';
 import Pagep1 from './comp1'
 import BackgroundWithStars from './BackgroundWithStars';
