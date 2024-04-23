@@ -8,18 +8,20 @@ import NavBar from '../components/NavBar';
 
 const DynamicParticles = dynamic(() => import('@tsparticles/react'), { ssr: false });
 
+
 import { initParticlesEngine } from '@tsparticles/react';
 import { loadSlim } from '@tsparticles/slim';
 
 // particlesConfig.js
 
 const Pagep1 = () => {
-  
 
-  console.log('Rendering Page component');
-  const particlesLoaded = (container) => {
-    console.log('Particles loaded:', container);
-  };
+console.log('Rendering Page component');
+
+const particlesLoaded = async (container) => {
+  console.log('Particles loaded:', container);
+};
+
    
   React.useEffect(() => {
     console.log('Effect triggered');
@@ -77,7 +79,8 @@ const Pagep1 = () => {
     position: 'relative',
     top: '30%',
     left: '20%'}}>
-  <DynamicParticles id="tsparticles"  particlesLoaded={particlesLoaded} options={particlesConfig} />
+      
+  <DynamicParticles id="tsparticles"  particlesLoaded={particlesLoaded} options={particlesConfig} />;
     </div>    
   </div>
   );
