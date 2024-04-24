@@ -33,7 +33,7 @@ const particlesLoaded = async (container) => {
 
   return (
     <div style={{ maxWidth: '100vw', overflowX: 'hidden' }}>
-      <div style={{ position: 'fixed', width: '100%', zIndex: 2 }}>
+      <div style={{ position: 'fixed', width: '100%', zIndex: 2  }}>
       <NavBar />
     </div>
     <div className="relative py-10 px-4 text-center" style={{ zIndex: 2, background: 'radial-gradient(circle, #778899,  #2c394b)' }}>

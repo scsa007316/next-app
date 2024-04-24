@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
+import '../styles/global.css';
 
 const NavBar = () => {
   const [isProjectsExpanded, setProjectsExpanded] = useState(false);
@@ -13,9 +14,14 @@ const NavBar = () => {
       style={{ backgroundColor: 'rgba(74, 112, 194, 0.75)', padding: '1rem', zIndex: 2 }}
       className="flex justify-between items-center"
     >
-      <a className="text-3xl font-bold text-white hover:underline" href="https://scsa007316.github.io/">
-        Aadarsh Singh
-      </a>
+     <a
+  style={{ fontSize: '3rem', fontWeight: 'bold', color: 'white', textDecoration: 'none' }}
+  className="hover:underline"
+  href="https://scsa007316.github.io/"
+>
+  Aadarsh Singh
+</a>
+
 
       <div className="space-x-10 flex items-center">
         <a className="text-white hover:underline rounded-full p-1" href="/ML/Physics">
